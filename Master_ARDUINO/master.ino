@@ -26,15 +26,9 @@ Serial.println(DHT.temperature, 1);
 delay(1000);
 
 
-if(((DHT.humidity, 1) >60) && ((DHT.temperature, 1)<35))
-{ x=1;   //FOG
-}
-
-
-
-
-      
-               
+if(((DHT.humidity, 1) >60) && ((DHT.temperature, 1)<35)){ 
+  x=1;   //FOG
+}            
   Wire.write(x);              // sends x 
   Wire.endTransmission();    // stop transmitting
   
